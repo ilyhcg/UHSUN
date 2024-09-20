@@ -1,0 +1,187 @@
+
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>科技感图片展示</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                background-color: #2c3e50;
+                font-family: Arial, sans-serif;
+                min-height: 100vh;
+                overflow-x: hidden;
+                position: relative; /* 设置为相对定位 */
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+                max-width: 1200px;
+                padding: 20px;
+                background-color: #ecf0f1;
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                border-radius: 10px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                border-radius: 5px;
+            }
+            h1 {
+                color: #3498db;
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 2.5em;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            .fade-in {
+                animation: fadeIn 1s ease-in-out;
+            }
+            /* ... 其他样式保持不变 ... */
+            .navbar {
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                display: flex;
+                gap: 10px;
+                z-index: 1000; /* 确保覆盖在其他元素之上 */
+            }
+            .navbar a {
+                color: #3498db;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+			.contact-email {
+                color: #3498db;
+                text-decoration: none;
+                font-weight: bold;
+                display: inline-block;
+                padding: 5px 10px; /* 再次减小填充 */
+                border: 1px solid #3498db;
+                border-radius: 2px; /* 减小圆角 */
+                background-color: #fff;
+                cursor: pointer;
+                font-size: 1em; /* 再次减小字体大小 */
+            }
+            .navbar .qr-code {
+                width: 200px; /* 增大二维码大小 */
+            }
+			.contact-email {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+            }
+            .side-pattern {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1; /* 放在背景层 */
+            }
+            .side-pattern .line-left {
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                background-color: #3498db;
+                top: 0;
+                left: 10px;
+            }
+            .side-pattern .line-right {
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                background-color: #3498db;
+                top: 0;
+                right: 10px;
+            }
+            .side-pattern .dot {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #3498db;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="side-pattern">
+            <div class="line-left"></div>
+            <div class="line-right"></div>
+            <div class="dot" style="top: 20%; left: 5%;">
+            </div>
+            <div class="dot" style="top: 40%; left: 1%;">
+            </div>
+            <div class="dot" style="top: 60%; left: 10%;">
+            </div>
+            <div class="dot" style="top: 80%; left: 5%;">
+            </div>
+            <div class="dot" style="top: 20%; right: 5%;">
+            </div>
+            <div class="dot" style="top: 40%; right: 1%;">
+            </div>
+            <div class="dot" style="top: 60%; right: 10%;">
+            </div>
+            <div class="dot" style="top: 80%; right: 5%;">
+            </div>
+        </div>
+        <div class="container fade-in">
+            <h1>UHSUN高速离线节点编程器</h1>
+            <div class="navbar">
+                <a href="http://www.uhsun.com/latest.exe">上位机下载</a>
+                <a href="http://www.uhsun.com/latest.bin">固件下载</a>
+                <a href="http://www.uhsun.com/list.html">支持芯片列表</a>
+                <a href="https://uhsun.taobao.com">官方淘宝店铺</a>
+                <img class="qr-code" src="qrcode.png" alt="二维码">
+            </div>
+    
+            <img src="幻灯片1.PNG" alt="图片 幻灯片1.PNG">
+        
+            <img src="幻灯片2.PNG" alt="图片 幻灯片2.PNG">
+        
+            <img src="幻灯片3.PNG" alt="图片 幻灯片3.PNG">
+        
+            <img src="幻灯片4.PNG" alt="图片 幻灯片4.PNG">
+        
+            <img src="幻灯片5.PNG" alt="图片 幻灯片5.PNG">
+        
+            <img src="幻灯片6.PNG" alt="图片 幻灯片6.PNG">
+        
+            <img src="幻灯片7.PNG" alt="图片 幻灯片7.PNG">
+        
+            <img src="幻灯片8.PNG" alt="图片 幻灯片8.PNG">
+        
+            <img src="幻灯片9.PNG" alt="图片 幻灯片9.PNG">
+        
+            <img src="幻灯片10.PNG" alt="图片 幻灯片10.PNG">
+        
+            <img src="幻灯片11.PNG" alt="图片 幻灯片11.PNG">
+        
+            <img src="幻灯片12.PNG" alt="图片 幻灯片12.PNG">
+        
+            <img src="幻灯片13.PNG" alt="图片 幻灯片13.PNG">
+        
+            <img src="幻灯片14.PNG" alt="图片 幻灯片14.PNG">
+        
+            <a href="mailto:support@uhsun.com" class="contact-email">联系支持</a>
+        </div>
+    </body>
+    </html>
+    
